@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f8e9e9">
+  <meta name="description" content="A little birthday garden made just for you.">
+  <title>Happy Birthday, Yashii Baby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <!-- Opening envelope -->
+    <section class="screen opening" id="opening">
+      <div class="tiny-label">♥ HEHEHEEE</div>
+      <div class="opening-copy">
+        <span>Hello Cutieee</span>
+        <small>I made something for you</small>
+      </div>
+      <button class="envelope" id="openEnvelope" aria-label="Open your birthday letter">
+        <span class="envelope-flap"></span>
+        <span class="envelope-body"></span>
+        <span class="wax">♥</span>
+      </button>
+      <p class="hint">tap the little envelope</p>
+    </section>
+
+    <!-- Main birthday card -->
+    <section class="screen page hidden" id="welcome">
+      <div class="paper-card hero-card">
+        <div class="sticker">🐼<span>♥</span></div>
+        <div class="tiny-label">♥ HEHEHEEE</div>
+        <h1>Happy Birthday</h1>
+        <div class="script-name">Yashii Baby ♡</div>
+        <div class="dashes"><i></i><b>✻</b><i></i></div>
+        <p class="intro-text">Today is yours. A whole garden of wishes, for every laugh we’ve shared, every silly moment, and every reason you make the world brighter. HAPPY BIRTHDAYYYYY CUTIEEEEE</p>
+
+        <div class="song-box">
+          <div class="song-art">♥</div>
+          <div class="song-meta"><strong>Dedicated Special Song For You</strong><span>WITH LOVE</span><div class="progress"><i id="progress"></i></div><small id="time">0:00</small></div>
+          <button class="round-btn" id="musicBtn" aria-label="Play music">▶</button>
+        </div>
+        <p class="song-note">i picked this one, because it always reminds me of you.</p>
+        <button class="pill-btn" data-next="album">SEE OUR ALBUM</button>
+      </div>
+    </section>
+
+    <!-- Album -->
+    <section class="screen page hidden" id="album">
+      <div class="section-label">♥ OUR ALBUM</div>
+      <h2>Some cool album for you</h2>
+      <p class="subtitle">a few of my favourite moments with you ♡</p>
+
+      <div class="memory-wrap">
+        <button class="circle-nav" id="prevPhoto" aria-label="Previous memory">←</button>
+        <article class="memory-card">
+          <div class="photo-frame"><img id="memoryPhoto" src="assets/photo1.jpg" alt="A favourite memory"></div>
+          <div class="memory-count" id="memoryCount">MEMORY 01 / 03</div>
+          <p class="memory-caption" id="memoryCaption">ordinary days with you have always been my favourite ones.</p>
+        </article>
+        <button class="circle-nav" id="nextPhoto" aria-label="Next memory">→</button>
+      </div>
+      <div class="dots" id="memoryDots"><i class="active"></i><i></i><i></i></div>
+      <button class="pill-btn" data-next="wishes">PICK A WISH →</button>
+    </section>
+
+    <!-- Three wishes -->
+    <section class="screen page hidden" id="wishes">
+      <div class="section-label">♥ THREE WISHES</div>
+      <h2>a tiny bouquet of birthday wishes</h2>
+      <p class="subtitle">pick each flower — there’s a little wish inside ♡</p>
+
+      <div class="wish-grid">
+        <button class="wish-card" data-wish="1"><span class="flower pink">✿</span><small>PICK ME</small><div class="wish-text">the way you laugh — may you always have a hundred little reasons to laugh that way.</div></button>
+        <button class="wish-card" data-wish="2"><span class="flower peach">✿</span><small>PICK ME</small><div class="wish-text">the way you show up — may life return the same softness you give to everyone around you.</div></button>
+        <button class="wish-card" data-wish="3"><span class="flower lilac">✿</span><small>PICK ME</small><div class="wish-text">your next chapter — may it be gentler, happier, and full of moments you never want to forget.</div></button>
+      </div>
+      <div class="vase" aria-hidden="true">⌒</div>
+      <div class="dots"><i></i><i></i><i></i></div>
+      <button class="pill-btn" data-next="letter">READ MY LETTER →</button>
+    </section>
+
+    <!-- Letter -->
+    <section class="screen page hidden" id="letter">
+      <div class="section-label">♥ A BIRTHDAY LETTER</div>
+      <article class="letter-card">
+        <div class="letter-sticker">🐶</div>
+        <div class="tiny-label">✻ A LETTER, JUST FOR YOU ✻</div>
+        <h2>Yashii Baby;</h2>
+        <div class="dashes"><i></i><b>✻</b><i></i></div>
+        <div class="letter-copy">
+          <p>Happiest birthday, my love ❤️ I’m so grateful to have you in my life. You mean the world to me, You’ve become such a special part of my days, and honestly, everything feels a little better with you around.</p>
+          <p>I hope this year brings you all the happiness you deserve, lots of reasons to smile, and everything you have been wishing for.</p>
+          <p>Let's meet soon and have so much of fun together baby... 🤗🤭</p>
+          <p class="love-line">I LOVE YOUUUUUUUU</p>
+          <p class="signature">Yashii Baby ❤️🫂🥰<br><span style="font-size:.7em">— From Vannu</span></p>
+        </div>
+        <button class="pill-btn" data-next="final">ONE LAST THING →</button>
+      </article>
+    </section>
+
+    <!-- Final -->
+    <section class="screen page hidden final" id="final">
+      <div class="final-card">
+        <div class="big-heart">♡</div>
+        <div class="section-label">♥ JUST FOR YOU</div>
+        <h2>happy birthday, my love</h2>
+        <p>May this year give you more smiles than tears, more memories than worries, and more reasons to feel loved every single day.</p>
+        <div class="final-name">Yashii Baby ❤️<br><span style="font-size:.65em">From Vannu</span></div>
+        <button class="pill-btn" id="replay">START AGAIN ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="song" preload="metadata" src="assets/music.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
